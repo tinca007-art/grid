@@ -1,0 +1,42 @@
+/* proper box-sizing is very important when creating grid system */
+* {
+  box-sizing : border-box;
+}
+
+$columns: 12;
+$column-base-width: 100% / $columns;
+$gutter: 24px;
+
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  min-height: 1px;
+  width: $column-base-width;
+  padding: $gutter / 2;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: $column-base-width * $i;
+  }
+}
+
+/* medium */
+@media screen and (width > 640px) {
+
+}
+
+/* large */
+@media screen and (width > 960px) {
+
+}

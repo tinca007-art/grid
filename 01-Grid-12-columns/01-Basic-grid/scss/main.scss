@@ -1,0 +1,58 @@
+/* proper box-sizing is very important when creating grid system */
+* {
+  box-sizing : border-box;
+}
+
+/*
+12-columns grid consists of:
+- container
+- row
+- column (+optional gutters)
+*/
+
+// variables
+// $columns: 12;
+// $column-base-width: 100% / $columns;
+// $gutter: 24px;
+
+
+/*
+Container:
+contains grid, defines total grid width
+*/
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*
+Row:
+contains columns and wraps them if they exceed width of the row
+*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+Column:
+general column, class name starts with "col-"
+height 1px to prevent overlapping when columns are empty
+*/
+[class*="col-"] {
+  min-height: 1px;
+  // width:
+  // padding:
+}
+
+/* Columns of different widths */
+
+
+/* Creating columns programatically */
+// @for $i from 1 through $columns {
+//   .col-#{$i} {
+//     width: $column-base-width * $i;
+//   }
+// }
