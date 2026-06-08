@@ -9,6 +9,7 @@ body {
 /* barvicky elementů na stránce */
 header,
 footer {
+	grid-column: 1 / 4;
 	background: yellowgreen;
 }
 
@@ -25,6 +26,12 @@ nav {
 /* -------------------------------------------- */
 
 .grid {
-	height: 100vh; /* nastavíme výšku gridu přes celou stránku */
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto 20% 20%;
+	grid-template-rows: 25% 25% 25% 25%;
 }
 
+article, nav, aside {
+grid-row: 2 / 4;
+}

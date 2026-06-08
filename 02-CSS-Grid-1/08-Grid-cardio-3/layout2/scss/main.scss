@@ -9,14 +9,23 @@ body {
 /* barvicky elementů na stránce */
 header,
 footer {
+	grid-column: 2 / 5;
 	background: yellowgreen;
 }
 
+header {
+grid-row: 1;
+}
+
 aside {
+	grid-column: 4;
+	grid-row: 2 / 4;
 	background: beige;
 }
 
 nav {
+	grid-column: 1;
+	grid-row: 1 / 5;
 	background: lightsteelblue;
 }
 
@@ -25,6 +34,9 @@ nav {
 /* -------------------------------------------- */
 
 .grid {
-	height: 100vh; /* nastavíme výšku gridu přes celou stránku */
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 20% auto auto 20%;
+	grid-template-rows: 20% auto auto 20%;
 }
 

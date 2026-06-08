@@ -17,7 +17,22 @@ aside {
 }
 
 nav {
+	grid-column: 1;
+	grid-row: 1 / 5;
 	background: lightsteelblue;
+}
+
+header {
+grid-column: 2 / 4;
+}
+
+aside {
+grid-row: 2 / 5;
+grid-column: 3;
+}
+
+footer {
+grid-row: 4;
 }
 
 /* -------------------------------------------- */
@@ -25,6 +40,9 @@ nav {
 /* -------------------------------------------- */
 
 .grid {
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	grid-template-rows: 25% 25% 25% 25%;
 	height: 100vh; /* nastavíme výšku gridu přes celou stránku */
 }
 

@@ -16,7 +16,7 @@ export default defineConfig({
   // root: './02-CSS-Grid-1/06-Grid-cardio-1',
   // root: './02-CSS-Grid-1/07-Grid-cardio-2/grid1',
   // root: './02-CSS-Grid-1/07-Grid-cardio-2/grid2',
-   root: './02-CSS-Grid-1/07-Grid-cardio-2/grid3',
+  // root: './02-CSS-Grid-1/07-Grid-cardio-2/grid3',
   // root: './02-CSS-Grid-1/08-Grid-cardio-3/layout1',
   // root: './02-CSS-Grid-1/08-Grid-cardio-3/layout2',
   // root: './02-CSS-Grid-1/08-Grid-cardio-3/layout3',

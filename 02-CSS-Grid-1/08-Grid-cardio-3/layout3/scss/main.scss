@@ -17,6 +17,8 @@ aside {
 }
 
 nav {
+	grid-column: 1;
+	grid-row: 1 / 4;
 	background: lightsteelblue;
 }
 
@@ -25,6 +27,9 @@ nav {
 /* -------------------------------------------- */
 
 .grid {
-	height: 100vh; /* nastavíme výšku gridu přes celou stránku */
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 20% auto 20%;
 }
 
