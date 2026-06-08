@@ -11,9 +11,9 @@
 */
 
 // variables
-// $columns: 12;
-// $column-base-width: 100% / $columns;
-// $gutter: 24px;
+ $columns: 12;
+ $column-base-width: 100% / $columns;
+ $gutter: 24px;
 
 
 /*
@@ -43,8 +43,25 @@ height 1px to prevent overlapping when columns are empty
 */
 [class*="col-"] {
   min-height: 1px;
-  // width:
-  // padding:
+  width: $column-base-width;
+  padding-inline: $gutter / 2;
+}
+
+.col-1 { width: $column-base-width * 1; }
+.col-2 { width: $column-base-width * 2; }
+.col-3 { width: $column-base-width * 3;}
+.col-4 { width: $column-base-width * 4;}
+.col-5 { width: $column-base-width * 5;}
+.col-6 { width: $column-base-width * 6;}
+.col-7 { width: $column-base-width * 7;}
+.col-8 { width: $column-base-width * 8;}
+.col-9 { width: $column-base-width * 9;}
+.col-10 { width: $column-base-width * 10;}
+.col-11 { width: $column-base-width * 11;}
+.col-12 { width: $column-base-width * 12;}
+
+.hero {
+background: dodgerblue;
 }
 
 /* Columns of different widths */

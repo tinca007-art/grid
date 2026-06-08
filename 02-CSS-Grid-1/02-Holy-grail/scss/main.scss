@@ -18,3 +18,24 @@ body {
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+display: grid;
+grid-template-columns: 200px 1fr 100px;
+grid-template-rows: 200px auto 250px;
+gap: 20px;
+}
+
+.hlavicka {
+grid-column: span 3; // zabere 3 sloupce //
+grid-row: 1;
+}
+
+.hlavni {
+grid-column: 2;
+grid-row: 2;
+}
+
+.paticka {
+grid-column: 1 / 4;
+grid-row: 3;
+}

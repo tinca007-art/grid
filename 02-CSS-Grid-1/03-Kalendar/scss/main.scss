@@ -8,3 +8,27 @@ body {
 
 /* ---------------------------------------------------- */
 
+.kalendar {
+margin: 0;
+padding: 0;
+list-style: none;
+display: grid;
+grid-template-columns: repeat(7, 50px);
+grid-template-rows: repeat(6, 50px);
+gap: 2px;
+}
+
+li {
+border: 1px solid silver;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.zahlavi {
+background: orangered;
+}
+
+.predchozi, .nasledujici {
+background: grey;
+}

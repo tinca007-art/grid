@@ -1,6 +1,14 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
+
 html { box-sizing: border-box;}
 *, ::after, ::before { box-sizing: inherit; }
+
+.kontejner {
+display: grid;
+grid-template-rows: 100px auto auto auto 250px 100px;
+grid-template-columns: 33% 33% 33%;
+gap: 20px;
+}
 
 .kontejner > div {
 	padding: 20px;
@@ -17,23 +25,24 @@ html { box-sizing: border-box;}
 }
 
 
-/* ---------------------------------------------------- */
-
-/* Nastyluj jednotlivé bloky podle zadání na obrázku */
-
 .logo {
 	background-color: #55efc4;
 }
 
 .hlavicka {
+	grid-row: 1;
+	grid-column: 2 / 3;
 	background-color: #74b9ff;
 }
 
 .menu {
+	grid-row: 2 / 3;
+	grid-column: 1;
 	background-color: #ff7675;
 }
 
 .clanek1 {
+	grid-row: 2;
 	background-color: #fdcb6e;
 }
 

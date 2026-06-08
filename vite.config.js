@@ -4,7 +4,7 @@ export default defineConfig({
   // Odkomentujte cestu ke cvičení, na kterém pracujete:
 
   // 12-column grid
-  root: './01-Grid-12-columns/01-Basic-grid',
+  // root: './01-Grid-12-columns/01-Basic-grid',
   // root: './01-Grid-12-columns/02-Responsive-grid',
 
   // CSS Grid 1

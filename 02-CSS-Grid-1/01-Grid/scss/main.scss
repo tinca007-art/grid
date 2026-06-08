@@ -23,3 +23,20 @@ html { box-sizing: border-box; }
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+display: grid;
+grid-template-columns: 200px 100px 300px 150px; // čtyři sloupce//  //šířka sloupců//
+// grid-template-column: repeat (4, 150px); (4, 1fr); - čtyři stejně široké sloupce
+// grid-template-columns: 1fr 1fr 1fr; automaticky bude jeden sloupec zabírat třetinu šíčky
+grid-template-rows: 200px 80px 150px; // tři řádky//  //výška řádků//
+}
+
+.prvni {
+grid-column: 3;
+grid-row: 2; // pozice bude ve třetím sloupci a na druhém řádku//
+}
+
+.druhy {
+grid-column: 1 / 3; // od prvního sloupce do třetího sloupce-zabere dva sloupce //
+grid-row: 2 / 4;
+}
