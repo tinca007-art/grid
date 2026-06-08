@@ -8,12 +8,27 @@
     min-height: 100px;
 }
 
-.prvni { background-color: #2ecc71;}
-.druhy { background-color: #f1c40f;}
-.treti { background-color: #3498db;}
+.prvni {
+    grid-column: 3;
+    grid-row: 1;
+     background-color: #2ecc71;
+    }
+.druhy {
+    grid-column: 1;
+    grid-row: 1;
+     background-color: #f1c40f;
+    }
+.treti {
+    grid-column: 4;
+    grid-row: 1; 
+    background-color: #3498db;
+}
 .ctvrty { background-color: #e74c3c;}
 
 .kontejner {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row: auto;
     padding: 10px;
     border: 1px dashed red;
     background-color: #ffffcc;

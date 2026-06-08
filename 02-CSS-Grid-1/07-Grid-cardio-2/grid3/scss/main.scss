@@ -11,9 +11,15 @@
 .prvni { background-color: #2ecc71;}
 .druhy { background-color: #f1c40f;}
 .treti { background-color: #3498db;}
-.ctvrty { background-color: #e74c3c;}
+.ctvrty { 
+    grid-column: 4 / 6;
+    background-color: #e74c3c;
+}
 
 .kontejner {
+    display: grid;
+    grid-template-columns: auto 100px 100px auto auto;
+    grid-template-rows: auto;
     padding: 10px;
     border: 1px dashed red;
     background-color: #ffffcc;
