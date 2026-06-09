@@ -31,8 +31,8 @@ nav {
 
 .grid {
 	display: grid;
-	grid-template-columns: 20% auto 20%;
-	grid-template-rows: 25% 25% 25% 25%;
+	grid-template-columns: 0.5fr 3fr 0.5fr;
+	grid-template-rows: 1fr 2fr 1fr 1fr;
 	height: 100vh; /* nastavíme výšku gridu přes celou stránku */
 }
 
